@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="productPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div id="sorting_div">
+      <p><span id="number_of_products"></span> PRODUCTS</p>
+      <select id="sort">
+        <option value="">BEST SELLING</option>
+        <option value="lth">PRICE, LOW TO HIGH</option>
+        <option value="htl">PRICE, HIGH TO LOW</option>
+        <option value="a_to_z">ALPHABETICALLY, A-Z</option>
+        <option value="z_to_a">ALPHABETICALLY, Z-A</option>
+      </select>
+    </div>
+    <div id="product_page">
+      <div id="filter_products">
+        <div id="drop_down">BRAND<i class="fa-solid fa-angle-down"></i></div>
+        <div>SUB CATEGORY<i class="fa-solid fa-angle-down"></i></div>
+        <div>COLOR<i class="fa-solid fa-angle-down"></i></div>
+        <div>HEEL-HEIGHT<i class="fa-solid fa-angle-down"></i></div>
+        <div>PERCENT OFF<i class="fa-solid fa-angle-down"></i></div>
+        <div>CONDITION<i class="fa-solid fa-angle-down"></i></div>
+        <div>PRICE<i class="fa-solid fa-angle-down"></i></div>
+        <div>SHOE SIZE<i class="fa-solid fa-angle-down"></i></div>
+        <div>SHOE WIDTH<i class="fa-solid fa-angle-down"></i></div>
+      </div>
+      <div id="products_page_right_div">
+        <div id="product_div"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="productPage.js"></script>
+<script
+  src="https://kit.fontawesome.com/8f9928a0eb.js"
+  crossorigin="anonymous"
+></script>
