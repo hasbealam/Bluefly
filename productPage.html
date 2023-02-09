@@ -24,15 +24,62 @@
     </div>
     <div id="product_page">
       <div id="filter_products">
-        <div id="drop_down">BRAND<i class="fa-solid fa-angle-down"></i></div>
-        <div>SUB CATEGORY<i class="fa-solid fa-angle-down"></i></div>
-        <div>COLOR<i class="fa-solid fa-angle-down"></i></div>
-        <div>HEEL-HEIGHT<i class="fa-solid fa-angle-down"></i></div>
-        <div>PERCENT OFF<i class="fa-solid fa-angle-down"></i></div>
-        <div>CONDITION<i class="fa-solid fa-angle-down"></i></div>
-        <div>PRICE<i class="fa-solid fa-angle-down"></i></div>
-        <div>SHOE SIZE<i class="fa-solid fa-angle-down"></i></div>
-        <div>SHOE WIDTH<i class="fa-solid fa-angle-down"></i></div>
+        <div class="drop_down">BRAND<i class="fa-solid fa-angle-down"></i></div>
+        <div id="brands">
+          <input type="checkbox" />
+          <label class="brand">ALEXANDER MCQUEEN</label><br />
+          <input type="checkbox" />
+          <label class="brand">AQUATALIA</label><br />
+          <input onchange="select_brand()" name="BALENCIAGA" type="checkbox" />
+          <label>BALENCIAGA</label><br />
+          <input type="checkbox" />
+          <label>BOTTEGA VENETA</label><br />
+          <input type="checkbox" />
+          <label>BRUNELLO CUCINELLI</label><br />
+          <input type="checkbox" />
+          <label>BURBERRY</label><br />
+          <input type="checkbox" />
+          <label>CELINE</label><br />
+          <input type="checkbox" />
+          <label>CHLOE</label><br />
+          <input type="checkbox" />
+          <label>COLE HAAN</label><br />
+          <input type="checkbox" />
+          <label>DIOR</label><br />
+          <input type="checkbox" />
+          <label>DOLCE & GABBANA</label><br />
+        </div>
+        <div class="drop_down">
+          SUB CATEGORY<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="drop_down">COLOR<i class="fa-solid fa-angle-down"></i></div>
+        <div id="colors">
+          <input
+            onchange="select_color()"
+            type="checkbox"
+            name="Black"
+            class="color"
+          />
+          <label for="color">BLACK</label><br />
+          <input type="checkbox" class="color" />
+          <label for="color">PINK</label><br />
+        </div>
+        <div class="drop_down">
+          HEEL-HEIGHT<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="drop_down">
+          PERCENT OFF<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="drop_down">
+          CONDITION<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="drop_down">PRICE<i class="fa-solid fa-angle-down"></i></div>
+        <div class="drop_down">
+          SHOE SIZE<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="drop_down">
+          SHOE WIDTH<i class="fa-solid fa-angle-down"></i>
+        </div>
       </div>
       <div id="products_page_right_div">
         <div id="product_div"></div>

@@ -545,14 +545,15 @@ function show_products(products_data) {
       add_to_wishlist(e);
     });
     var product_img = document.createElement("img");
-    product_img.setAttribute("onmouseover", onHover());
-    product_img.setAttribute("onmouseout", offHover());
+    product_img.src = e.image_link;
+    product_img.addEventListener("mouseover", onHover);
+    product_img.addEventListener("mouseout", offHover);
 
     function onHover() {
-      product_img.setAttribute("src", e.image_link);
+      product_img.setAttribute("src", e.alternative_img_link);
     }
     function offHover() {
-      product_img.setAttribute("src", e.alternative_img_link);
+      product_img.setAttribute("src", e.image_link);
     }
 
     imagediv.append(button, product_img);
@@ -601,24 +602,23 @@ document.querySelector("#sort").addEventListener("change", sortProducts);
 
 function sortProducts() {
   var sortType = document.querySelector("#sort").value;
-  console.log(sortType);
-  console.log(sortType == "");
+  var dummy_array = products_data.slice();
   if (sortType == "lth") {
-    var lth = products_data.sort(function (a, b) {
+    var lth = dummy_array.sort(function (a, b) {
       price1 = a.selling_price.replace(",", "");
       price2 = b.selling_price.replace(",", "");
       return price1 - price2;
     });
     show_products(lth);
   } else if (sortType == "htl") {
-    var htl = products_data.sort(function (a, b) {
+    var htl = dummy_array.sort(function (a, b) {
       price1 = a.selling_price.replace(",", "");
       price2 = b.selling_price.replace(",", "");
       return price2 - price1;
     });
     show_products(htl);
   } else if (sortType == "a_to_z") {
-    var a_to_z = products_data.sort(function (a, b) {
+    var a_to_z = dummy_array.sort(function (a, b) {
       if (a.product_name > b.product_name) {
         return 1;
       } else if (a.product_name < b.product_name) {
@@ -629,7 +629,7 @@ function sortProducts() {
     });
     show_products(a_to_z);
   } else if (sortType == "z_to_a") {
-    var z_to_a = products_data.sort(function (a, b) {
+    var z_to_a = dummy_array.sort(function (a, b) {
       if (a.product_name < b.product_name) {
         return 1;
       } else if (a.product_name > b.product_name) {
@@ -640,10 +640,7 @@ function sortProducts() {
     });
     show_products(z_to_a);
   } else if (sortType == "") {
-    var relevance = products_data.filter(function (e) {
-      return true;
-    });
-    show_products(relevance);
+    show_products(products_data);
   }
 }
 
@@ -651,4 +648,77 @@ var wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 function add_to_wishlist(e) {
   wishlist.push(e);
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
+}
+
+document
+  .querySelector("#filter_products > div:nth-child(4)")
+  .addEventListener("click", function () {
+    display_colors();
+  });
+
+function display_colors() {
+  var toogle = localStorage.getItem("toogle") || false;
+  console.log(toogle == true);
+  if (toogle == "true") {
+    toogle = false;
+    localStorage.setItem("toogle", toogle);
+    hide_colors();
+  } else {
+    toogle = true;
+    localStorage.setItem("toogle", toogle);
+    show_colors();
+  }
+}
+
+function show_colors() {
+  document.getElementById("colors").style.display = "block";
+}
+
+function hide_colors() {
+  document.getElementById("colors").style.display = "none";
+}
+
+document
+  .querySelector("#filter_products > div:first-child")
+  .addEventListener("click", function () {
+    display_brands();
+  });
+
+function display_brands() {
+  var toogle = localStorage.getItem("toogle") || true;
+  if (toogle == "true") {
+    toogle = false;
+    localStorage.setItem("toogle", toogle);
+    hideBrands();
+  } else {
+    toogle = true;
+    localStorage.setItem("toogle", toogle);
+    showBrands();
+  }
+}
+
+function showBrands() {
+  document.getElementById("brands").style.display = "block";
+}
+
+function hideBrands() {
+  document.getElementById("brands").style.display = "none";
+}
+
+function select_brand() {
+  var filteredProducts = products_data.filter(function (e) {
+    if (event.target.name == e.brand) {
+      return true;
+    }
+  });
+  show_products(filteredProducts);
+}
+
+function select_color() {
+  var filteredProducts = products_data.filter(function (e) {
+    if (event.target.namr == e.color) {
+      return true;
+    }
+  });
+  show_products(filteredProducts);
 }
