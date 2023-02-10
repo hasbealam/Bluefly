@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* header part */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    link[rel="icon"] {
+        width: 150px;
+        height: 150px;
+    }
+
+    #announcement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+    }
+
+    #welcome {
+        font-weight: 700;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-size: .85em;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* uppergeader */
+    #upheader>div {
+        width: 95%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    #upheader div:first-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    #divheaderlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headerlogo {
+        width: 200px;
+    }
+
+    #headericonsdiv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #headericonsdiv img {
+        width: 23px;
+        margin-left: 27px;
+    }
+
+    #headericonsdiv span {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #headericonsdiv span:hover {
+        cursor: pointer;
+    }
+
+    /* navbar header */
+    #navbar ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+        /* font-family: Tiemann,serif; */
+        /* font-family: Futura,sans-serif; */
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;
+        /* border: 1px solid black; */
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #navbar {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* top part */
+    #top {
+        text-align: center;
+        width: 100%;
+        /* border: solid red; */
+    }
+
+    #top div {
+        width: 30%;
+        /* border: solid blue; */
+        margin: auto;
+    }
+
+    #top input,
+    button {
+        width: 100%;
+        height: 35px;
+        color: black;
+    }
+
+    #top h3:nth-child(1) {
+        background-color: black;
+        color: white;
+        height: 50px;
+    }
+
+
+
+
+
+    /* middle part  */
+    #middle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap:10px; */
+        text-align: center;
+        /* border: solid red; */
+        padding: 20px;
+    }
+
+    #middle div {
+        /* border: solid blue; */
+        margin: 15px;
+
+    }
+
+    #middle img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #middle button {
+        width: 50%;
+        background-color: white;
+        border: 1px solid rgb(192, 184, 184);
+    }
+
+    /* bottom part */
+    #bottom {
+        width: 100%;
+        /* border: solid red; */
+        background-color: rgb(230, 230, 230);
+        padding: 40px;
+    }
+
+    #bottom1 {
+        /* border: solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+    }
+
+    #bottom1 button,
+    input {
+        width: 50%;
+        height: 30px;
+        /* background-color: black; */
+        color: white;
+    }
+
+    #bottom2 {
+        /* border: solid blue; */
+        text-align: center;
+        margin-top: 60px;
+
+    }
+
+    #bottom1>div:nth-child(1) {
+        display: flex;
+        width: 90%;
+    }
+
+    #bottom1>div {
+        /* border: solid green; */
+        justify-content: space-between;
+    }
+
+    #bottom1 button {
+        background-color: black;
+        color: white;
+        width: 51%;
+    }
+
+    /* media queries */
+    @media all and (max-width:750px){
+        #middle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        /* padding: 20px; */
+        /* font-family: sans-serif; */
+    }
+
+    
+</style>
+
+<body>
+    <div id="header">
+        <div id="upheader">
+            <div>
+                <div></div>
+                <div id="divheaderlogo">
+                    <a href="index.html">
+                        <img id="headerlogo"
+                            src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
+                            alt="logo">
+                    </a>
+                </div>
+                <div id="headericonsdiv">
+                    <span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMldb7foKl4UOqRm4MHKueO0z7MWCYzndRNQ&usqp=CAU"
+                            alt="search">
+                        SEARCH
+                    </span>
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6vvPHexMaMZgz8_SiRqzWOY8SB0D3q6a7A&usqp=CAU"
+                            alt="profile">
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/ios/1x/loading-heart.png" alt="favourite">
+                    </a>
+                    <a href="Cart.html">
+                        <img src="https://img.icons8.com/ios/1x/shopping-bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li>
+                        <a href="">CLOTHING</a>
+                    </li>
+                    <li>
+                        <a href="">SHOES</a>
+                    </li>
+                    <li>
+                        <a href="">HANDBAG & ACCESSORIES</a>
+                    </li>
+                    <li>
+                        <a href="">DESIGNERS</a>
+                    </li>
+                    <li>
+                        <a href="">SUNGLASESS</a>
+                    </li>
+                    <li>
+                        <a href="">JEWELRY & WATCHES</a>
+                    </li>
+                    <li>
+                        <a href="">UNDER $50</a>
+                    </li>
+                    <li>
+                        <a href="">CLEARANCE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- announcements -->
+        <div id="announcement">
+            <span id="welcome">WELCOME TO BLUEFLY:</span>
+            <span id="subwelcom">Luxuary brands at discounted prices</span>
+        </div>
+    </div>
+
+    <div id="top">
+        <!-- <h3>WELCOME TO BLUEFLY: Luxury brands at discounted prices</h3> -->
+        <div>
+            <h1>LOGIN</h1>
+            <h3>EMAIL</h3>
+            <input id="email">
+            <h3>PASSWORD</h3>
+            <input id="password" /><br>
+            <h3>forgot password?</h3>
+            <button id="signin" style="background-color: black; color: white">SIGN IN</button>
+            <h3></h3>
+            <a id="signin" href="SignUp.html" style="text-decoration: none; color:black">Create Account</a>
+            <h3></h3>
+        </div>
+
+    </div>
+    <div id="middle">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg?v=1615204984">
+            <h2>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h2>
+            <h5>From Hudson, Joe's Jeans, J Brand & More</h5>
+            <button>SHOP DENIM</button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg?v=1656342120">
+            <h2>UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS</h2>
+            <h5>Must-Haves From Halston, BCBGMAXAZRIA, Iro & More</h5>
+            <button>SHOP JUMPSUITS</button>
+        </div>
+        <div>
+            <img
+                src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg?v=1656342603%22%20alt=%22UP%20TO%2090%%20off%20Women&#39;s%20Must-have%20accessories">
+                <h2 >UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h2>
+                <h5>Shop Wallets, Belts, Hats, Sunglasses & More</h5>
+            <button>SHOP WOMEN'S ACCESSORIES</button>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="bottom1">
+            <div>
+                <div>
+                    <p>ABOUT US</p>
+                    <p>Contact Us</p>
+                    <p>Frequently Asked Questions</p>
+                    <p>Shipping & Returns</p>
+                    <p>Pre-Owned Guide</p>
+
+                </div>
+                <div>
+                    <p><br></p>
+                    <p>Sell on Bluefly</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Condition</p>
+                    <p>Do not sell my personal information</p>
+                    
+                </div>
+            </div>
+            <div>
+                <p>SIGN UP AND SAVE</p>
+                <p>Subscribe to get exclusive offers on designer brands</p>
+                <input id="email2" placeholder="Enter your email" style="color:black"><br>
+                <h3></h3>
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div id="bottom2">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820">
+            <h4>© 2023 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</h4>
+        </div>
+
+    </div>
+    <!-- <button id="dark">Dark Mode</button> -->
+</body>
+
+</html>
+
+<script>
+    document.getElementById("signin").addEventListener("click", signIn);
+
+    var regUser = JSON.parse(localStorage.getItem("userArr")) || [];
+    function signIn(e) {
+        e.preventDefault();
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (!email || !password) {
+            alert("Please fill all the details");
+        }
+        else {
+            for (var i = 0; i < regUser.length; i++) {
+                if (regUser[i].email === email && regUser[i].password === password) {
+                    alert("Let's get Shopping");
+                    window.location.href = "index.html";
+                    return;
+                }
+                else if (email == "admin@gmail.com" && password == "admin") {
+                    alert("SignIn Sucessfully !");
+                    window.location.href = "index.html";
+                    return;
+                }
+            }
+            alert("ERROR! Please check your E-Mail Id or Password again.");
+        }
+    }
+
+     document.getElementById("dark").addEventListener("click", darkmode);
+
+</script>
