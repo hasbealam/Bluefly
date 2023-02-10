@@ -594,7 +594,8 @@ function show_products(products_data) {
     anchor.append(div);
     document.querySelector("#product_div").append(anchor);
 
-    document.querySelector("span").innerText = products_data.length;
+    document.querySelector("#number_of_products").innerText =
+      products_data.length;
   });
 }
 
