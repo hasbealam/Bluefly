@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+link[rel="icon"] {
+  width: 150px;
+  height: 150px;
+}
+
+#announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4px;
+}
+
+#welcome {
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* uppergeader */
+#upheader > div {
+  width: 95%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 0;
+}
+
+#upheader div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 100%; */
+}
+
+#divheaderlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerlogo {
+  width: 200px;
+  height: 30.66px;
+}
+
+#headericonsdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#headericonsdiv img {
+  width: 30px;
+  height: 30px;
+  margin-left: 27px;
+}
+
+#headericonsdiv span {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headericonsdiv span:hover {
+  cursor: pointer;
+}
+
+/* navbar header */
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+  /* font-family: Tiemann,serif; */
+  /* font-family: Futura,sans-serif; */
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  /* border: 1px solid black; */
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+#prodcts_images_container {
+  display: flex;
+}
+
+#products_details_container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 5px solid blue; */
+  width: 98%;
+  margin: auto;
+}
+
+#products_details > p:first-child {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  color: black;
+  letter-spacing: 0.025em;
+  font-size: 20px;
+  font-weight: 700;
+}
+#products_details > p:nth-child(2) {
+  font-family: Tiemann, serif;
+  font-style: normal;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1;
+  margin: -15px 0px -8px 0px;
+}
+#diff_images > div {
+  padding-bottom: 30px;
+  margin-right: 5px;
+  /* border: 5px solid blue; */
+}
+#diff_images img {
+  width: 100px;
+  height: 100px;
+}
+#main_image > img {
+  /* border: 5px solid red; */
+  width: 200%;
+  /* background-color: green; */
+}
+#products_details {
+  width: 35%;
+  /* margin-left: 55%; */
+}
+
+#product_pricing {
+  display: flex;
+  gap: 15px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 18px;
+  font-weight: 400px;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+  /* border: 2px solid black; */
+}
+
+#products_details > hr:nth-child(4) {
+  margin: 20px 0px 40px 0px;
+}
+
+#products_details > p:nth-child(5) {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  color: black;
+  letter-spacing: 0.3em;
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+#product_pricing > p:last-child {
+  color: red;
+  font-size: 16px;
+  /* border: 2px solid red; */
+  margin-top: 20px;
+}
+#product_pricing > p:nth-child(1) {
+  text-decoration: line-through;
+}
+
+#product_size {
+  display: flex;
+  gap: 10px;
+}
+
+#product_size > div {
+  border: 2px solid lightgrey;
+  padding: 10px 15px;
+}
+
+#product_size > div:nth-child(3) {
+  border: 2px solid black;
+}
+#size_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#size_box > p {
+  text-decoration: underline;
+  font-size: large;
+  margin: 0px;
+}
+#color_image_div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#color_image_div > img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+#add_to_cart {
+  text-align: center;
+}
+#add_to_cart > button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 15px 0px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  line-height: 1.42;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+#add_to_cart > button:hover {
+  cursor: pointer;
+}
+
+add_to_cart > p:last-child {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 13px;
+  line-height: 1.42;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+
+#add_to_cart ~ p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+ul {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+/* bottom part */
+#bottom {
+  margin-top: 20px;
+  width: 94%;
+  /* border: solid red; */
+  background-color: rgb(230, 230, 230);
+  padding: 40px;
+}
+
+#bottom1 {
+  /* border: solid blue; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+#bottom1 button,
+input {
+  width: 50%;
+  height: 30px;
+  /* background-color: black; */
+  color: white;
+}
+
+#bottom2 {
+  /* border: solid blue; */
+  text-align: center;
+  margin-top: 60px;
+}
+
+#bottom1 > div:nth-child(1) {
+  display: flex;
+  width: 90%;
+}
+
+#bottom1 > div {
+  /* border: solid green; */
+  justify-content: space-between;
+}
+
+#bottom1 button {
+  background-color: black;
+  color: white;
+  width: 51%;
+}
+
+#bottom2 > img {
+  width: 248px;
+  height: 104px;
+}
+#bottom {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: black;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+}
