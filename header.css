@@ -1,1 +1,261 @@
-/* responsive header */
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0px;
+    z-index: 9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  /* upperheader */
+  
+  #upheader {
+    /* overflow: hidden;
+        position: absolute; */
+    /* width: 100%; */
+    /* background-color: white;
+      z-index: 10;
+     
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      padding: 10px 0; */
+    width: 100%;
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;;
+    margin: auto;
+    /* background-color: aqua; */
+  
+  }
+  
+  #upheader>div{
+    width: 30%;
+    /* border: 1px solid black; */
+  }
+  
+  /* #upheader>div {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 10px 0;
+    } */
+  
+  /* #upheader div:first-child {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    } */
+  
+  #divheaderlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #headerlogo {
+    width: 200px;
+  }
+  
+  #headericonsdiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+  }
+  
+  #headericonsdiv img {
+    width: 23px;
+    margin-left: 27px;
+  }
+  
+  #headericonsdiv span {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #headericonsdiv span:hover {
+    cursor: pointer;
+  }
+  
+  /* anoouncemet */
+  
+  #announcement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    /* position: relative; */
+    width: 100%;
+    /* margin-top: 100px; */
+  }
+  
+  #welcome {
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .85em;
+  }
+  
+  /* navbar header */
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    list-style: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+  
+  #navbar>ul>li>a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #navbar {
+    width: 95%;
+    /* display: block; */
+    margin: auto;
+    margin-top: 20px;
+    /* justify-content: center; */
+  }
+  
+  .dropbar_content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 63%;
+    transition: all;
+    transition-delay: 1s;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Futura, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    z-index: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .dropbar_content>div>h2 {
+    font-size: 12px;
+  
+  }
+  
+  .dropbar_content>div>img {
+    width: 80%;
+  }
+  
+  a:hover .dropbar_content {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    z-index: 0;
+    font-style: underline;
+  
+  }
+  
+  /* drop part is above */
+  #headericonsdiv>span>p {
+    display: inline;
+    margin: auto;
+  }
+  
+  .linebutton {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border: 2px solid black;
+    margin: 2px;
+  }
+  
+  #buttonnav>button {
+    border: 0;
+    background-color: white;
+    width: auto;
+    display: none;
+  }
+  
+  
+  
+  /* responsive header */
+  @media all and (min-width:120px) and (max-width:480px) {
+    #headericonsdiv>span>p {
+      display: none;
+    }
+  
+    #headericonsdiv>span {
+      width: auto;
+    }
+  
+    #headerlogo {
+      width: 150px;
+    }
+  
+    #headericonsdiv img {
+      width: 20px;
+      margin-left: 10px;
+    }
+    #buttonnav{
+      display: none;
+    }
+    #buttonnav>button {
+      display: inline;
+    }
+  
+    #upheader>div{
+      width: 50%;
+    }
+    #upperheader{
+      width: 90%;
+    }
+  }
+  
+  @media all and (min-width:480px) and (max-width:760px) {
+    #headericonsdiv>span>p {
+      display: none;
+  
+    }
+  
+    #headericonsdiv>span {
+      width: auto;
+    }
+  
+    #headerlogo {
+      width: 150px;
+    }
+  
+    #headericonsdiv img {
+      width: 20px;
+      margin-left: 10px;
+    }
+  
+    #buttonnav>button {
+      display: inline;
+    }
+    #upheader>div{
+      width: 50%;
+    }
+    #upperheader{
+      width: 90%;
+    }
+    #buttonnav{
+      display: none;
+    }
+  }
