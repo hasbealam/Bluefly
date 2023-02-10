@@ -157,7 +157,7 @@
         /* gap:10px; */
         text-align: center;
         /* border: solid red; */
-        padding: 10px;
+        padding: 20px;
     }
 
     #middle div {
@@ -172,9 +172,9 @@
     }
 
     #middle button {
-        width:50%;
+        width: 50%;
         background-color: white;
-        border-color: rgb(119, 115, 115);
+        border: 1px solid rgb(192, 184, 184);
     }
 
     /* bottom part */
@@ -182,18 +182,19 @@
         width: 100%;
         /* border: solid red; */
         background-color: rgb(230, 230, 230);
-        padding: 20px;
+        padding: 40px;
     }
 
     #bottom1 {
         /* border: solid blue; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 40px;
 
     }
 
-    #bottom1 button, input {
+    #bottom1 button,
+    input {
         width: 50%;
         height: 30px;
         /* background-color: black; */
@@ -203,17 +204,25 @@
     #bottom2 {
         /* border: solid blue; */
         text-align: center;
-        margin-top: 10px;
+        margin-top: 60px;
 
     }
 
     #bottom1>div:nth-child(1) {
         display: flex;
+        width: 90%;
     }
 
     #bottom1>div {
         /* border: solid green; */
         justify-content: space-between;
+    }
+
+    #bottom1 button {
+        background-color: black;
+        color: white;
+        width: 51%;
+
     }
 </style>
 
@@ -302,23 +311,22 @@
     <div id="middle">
         <div>
             <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_400x.jpg?v=1615204984">
-            <h3>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h3>
-            <h6>From Hudson, Joe's Jeans, J Brand & More</h6>
+            <h2>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h2>
+            <h5>From Hudson, Joe's Jeans, J Brand & More</h5>
             <button>SHOP DENIM</button>
         </div>
         <div>
-            <img
-                src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg?v=1656342120">
-            <h3>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h3>
-            <h6>From Hudson, Joe's Jeans, J Brand & More</h6>
-            <button>SHOP DENIM</button>
+            <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_1112754335--RESIZED2_400x.jpg?v=1656342120">
+            <h2>UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS</h2>
+            <h5>Must-Haves From Halston, BCBGMAXAZRIA, Iro & More</h5>
+            <button>SHOP JUMPSUITS</button>
         </div>
         <div>
             <img
                 src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/shutterstock_210297940-resized_for_viewing_400x.jpg?v=1656342603%22%20alt=%22UP%20TO%2090%%20off%20Women&#39;s%20Must-have%20accessories">
-            <h3>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h3>
-            <h6>From Hudson, Joe's Jeans, J Brand & More</h6>
-            <button>SHOP DENIM</button>
+                <h2 >UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h2>
+                <h5>Shop Wallets, Belts, Hats, Sunglasses & More</h5>
+            <button>SHOP WOMEN'S ACCESSORIES</button>
         </div>
     </div>
     <div id="bottom">
@@ -343,7 +351,8 @@
             <div>
                 <h3>SIGN UP AND SAVE</h3>
                 <h4>Subscribe to get exclusive offers on designer brands</h4>
-                <input id="email2" placeholder="Enter your email">
+                <input id="email2" placeholder="Enter your email"><br>
+                <h3></h3>
                 <button>Subscribe</button>
             </div>
         </div>
@@ -354,6 +363,7 @@
         </div>
 
     </div>
+    <!-- <button id="dark">Dark Mode</button> -->
 </body>
 
 </html>
@@ -386,5 +396,7 @@
             alert("ERROR! Please check your E-Mail Id or Password again.");
         }
     }
+
+     document.getElementById("dark").addEventListener("click", darkmode);
 
 </script>
