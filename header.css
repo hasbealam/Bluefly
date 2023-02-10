@@ -1,0 +1,107 @@
+.dropbar_content{
+    width: 0;
+    display: none;
+    position: absolute;
+    background-color: rgb(187, 30, 30);
+    left: 0;
+    top: 63%;
+    transition: all;
+    transition-delay: 1s;
+    margin: auto;
+    font-family: Futura, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    z-index: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.dropbar_content>div>h2{
+    font-size: 12px;
+   
+}
+.dropbar_content>div>img{
+    width: 80%;
+}
+
+#navbar>a:hover .dropbar_content{
+   display: flex;
+   column-gap: 30px;
+   justify-content: center;
+   z-index: 999;
+   width: 100%;
+   font-style: underline;
+  
+}
+
+/* drop part is above */
+#headericonsdiv>span>p {
+    display: inline;
+    margin: auto;
+}
+
+.linebutton {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+#buttonnav>button {
+    border: 0;
+    background-color: white;
+    width: auto;
+    display: none;
+}
+
+
+
+/* responsive header */
+@media all and (min-width:120px) and (max-width:480px) {
+    #headericonsdiv>span>p {
+        display: none;
+
+    }
+
+    #headericonsdiv>span {
+        width: auto;
+    }
+
+    #headerlogo {
+        width: 150px;
+    }
+
+    #headericonsdiv img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    #buttonnav>button {
+        display: inline;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:760px) {
+    #headericonsdiv>span>p {
+        display: none;
+
+    }
+
+    #headericonsdiv>span {
+        width: auto;
+    }
+
+    #headerlogo {
+        width: 150px;
+    }
+
+    #headericonsdiv img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    #buttonnav>button {
+        display: inline;
+    }
+}
