@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      #rightdiv {
+        width: 50%;
+        border-left: 1px solid rgb(156, 148, 148);
+        padding: 20px 25px;
+        text-align: center;
+      }
+      .subtotal {
+        display: flex;
+        justify-content: space-between;
+      }
+      #leftdiv {
+        border-right: 1px solid rgb(156, 148, 148);
+        width: 50%;
+        padding: 20px 30px;
+      }
+      #leftdiv > img {
+        height: 50px;
+        width: 280px;
+      }
+      #leftdiv > div {
+        display: flex;
+        justify-content: space-between;
+      }
+      #CartProducts > div {
+        display: flex;
+        justify-content: space-between;
+      }
+      #CartProducts > div > div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        width: 90px;
+        height: 100px;
+        margin-top: 10px;
+        padding: 0px 10px;
+      }
+      p {
+        margin: 23px 15px;
+      }
+      input {
+        padding: 10px;
+      }
+      button {
+        padding: 10px;
+      }
+      h4 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      h4:before,
+      h4:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #d7bebe;
+        margin: auto;
+      }
+      #express {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #express > img {
+        width: 200px;
+        height: 60px;
+      }
+      #email {
+        width: 95%;
+      }
+      #region {
+        width: 98%;
+        padding: 10px;
+      }
+      #name {
+        display: flex;
+        justify-content: space-between;
+      }
+      #name > input {
+        width: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 12px;
+      }
+      #leftdiv > input {
+        width: 95%;
+      }
+      #state {
+        display: flex;
+        justify-content: space-between;
+
+        width: 99%;
+      }
+      #state > input {
+        margin-right: 5px;
+      }
+      #state > select {
+        margin-right: 5px;
+      }
+      #shipment {
+        padding: 8px;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        width: 130px;
+        height: 50px;
+      }
+      p {
+        font-size: smaller;
+      }
+      .Pdetails {
+        display: flex;
+      }
+
+      #coupon {
+        width: 70%;
+      }
+      .xyz {
+        border: 1px solid rgb(232, 219, 219);
+        border-radius: 8px;
+        width: 115px;
+        height: 100px;
+        padding: 4px;
+      }
+      .xyz > img {
+        width: 70px;
+        height: 70px;
+      }
+      i {
+        margin: 0px 5px;
+      }
+      table {
+        width: 100%;
+
+        border-radius: 8px;
+      }
+      #contactdet{
+        border-radius: 8px;
+        border: 1px solid rgb(181, 163, 163)
+
+      }
+      #paymentHead{
+        display: flex;
+      }
+      #cimg{
+        width: 150px;
+        height: 30px;
+      }
+      .expiry{
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+
+      /*  */
+      
+      
+    </style>
+  </head>
+  <body>
+    <div id="leftdiv">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?228763"
+        alt=""
+      />
+      <br />
+      <br />
+      <div style="justify-content: left">
+        <span><a href="Cart.html">Cart</a> <i class="fa-solid fa-angle-right"></i> </span>
+        <span><a href="Address.html">Information </a><i class="fa-solid fa-angle-right"></i></span>
+        <span><b>Payment</b></span>
+      </div>
+      <br />
+      <br />
+     
+      <div id="contactdet">
+        <table>
+          <tr>
+            <td>Contact:</td>
+            <td>shaad72345@gmail.com</td>
+            <td>Change</td>
+          </tr>
+          <tr>
+            <td>Ship to:</td>
+            <td><b><span id="addresss"></span></b></td>
+            
+            <td>Change</td>
+          </tr>
+          <tr>
+            <td>Method:</td>
+            <td>Standard</td>
+          </tr>
+        </table>
+      
+      </div>
+      
+       <br>
+      <h4>Express checkout</h4>
+      <div id="express">
+        <img
+          src="http://cdn.shopify.com/s/files/1/0887/6296/files/Untitled_6_480x480.png?v=1636747001"
+          alt=""
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLUn88n1xD5i2fTB6oTPbc3MJfsC4OLpnhA&usqp=CAU"
+          alt=""
+        />
+        <img
+          src="http://cdn.shopify.com/s/files/1/0887/6296/files/Untitled_6_480x480.png?v=1636747001"
+          alt=""
+        />
+      </div>
+      <h4>OR</h4>
+      
+        <h3>Payment</h3>
+        <h4>All transactions are secure and encripted</h4>
+
+        
+          <div id="paymentHead">
+              <h3>Card</h3>
+              <img src="https://bursar.unl.edu/images/4CCImage.jpg" alt="" id="cimg">
+          </div>
+         <hr>
+      <input type="number" placeholder="Card Number" id="card"><br>
+      <br>
+      <input type="text"  placeholder="Name on Card" id="Cname"><br>
+      <div >
+        <input type="date" placeholder="mm/yyyy" class="expiry" id="date"><br>
+        <br>
+        <input type="number" placeholder="Security Code" class="expiry" id="security" >
+      </div>
+      <br>
+  
+  <div style="justify-content: left;">
+      <input type="checkbox" class="agree" checked>
+      <label for="agree">Save my information for a faster checkout</label>
+  </div>
+
+      <br />
+      <input type="number" placeholder="Phone No." id="mob"/>
+      <div style="justify-content: left">
+        <input type="checkbox" name="Email me with news and offers" />
+        <p>Text me with news and offers</p>
+      </div>
+      <div>
+        <p>
+          <i class="fa-solid fa-angle-left"></i
+          ><a href="Cart.html">Return to Cart</a>
+        </p>
+        <button id="shipment">Pay</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <hr />
+      <div style="justify-content: left">
+        <p>Refund policy</p>
+        <p>Shipping policy</p>
+        <p>Privacy policy</p>
+        <p>Terms of servive</p>
+      </div>
+    </div>
+    <div id="rightdiv">
+      <div id="CartProducts"></div>
+      <br />
+      <hr />
+      <br />
+
+      <hr />
+      <div class="subtotal">
+        <h3>Subtotal</h3>
+        <h3 id="Ttotal">$</h3>
+      </div>
+      <div class="subtotal">
+        <h4>Shipping</h4>
+        <h4>+ $ 5</h4>
+      </div>
+      <hr />
+      <div class="subtotal">
+        <h3 id="Ttl">Total</h3>
+        <h1 id="Ftotal"></h1>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/a46e040db2.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    
+    var cartProducts = JSON.parse(localStorage.getItem("checkCart")) || [];
+    DispplayCartprod();
+    TotalPrice();
+    function DispplayCartprod() {
+      document.getElementById("CartProducts").textContent = "";
+      
+      cartProducts = JSON.parse(localStorage.getItem("checkCart")) || [];
+      cartProducts.map(function (elem, index) {
+        var div = document.createElement("div");
+        var div1 = document.createElement("div");
+        div1.style.marginTop = "5px";
+        div1.setAttribute("class", "xyz");
+        var div2 = document.createElement("div");
+
+        var div3 = document.createElement("div");
+        div3.setAttribute("class", "Pdetails");
+        var div4 = document.createElement("div");
+
+        var image = document.createElement("img");
+        image.setAttribute("src", elem.image_url);
+        image.style.width = "105px";
+        var p1 = document.createElement("p");
+        p1.textContent = elem.Name;
+        var p2 = document.createElement("p");
+        p2.textContent = elem.Details;
+
+        var p5 = document.createElement("p");
+        p5.textContent = elem.Quantity;
+        var p6 = document.createElement("p");
+        p6.textContent = elem.Fprice;
+        div1.append(image);
+        div2.append(p1, p2);
+        div3.append(div1, div2);
+        div4.append(p5, p6);
+        div.append(div3, div4);
+        document.getElementById("CartProducts").append(div);
+      });
+    }
+
+    function RemoveFunc(index) {
+      cartProducts.splice(index, 1);
+      localStorage.setItem("checkCart", JSON.stringify(cartProducts));
+
+      DispplayCartprod();
+      TotalPrice();
+    }
+
+    function TotalPrice() {
+      var tot = JSON.parse(localStorage.getItem("total-price"));
+      document.querySelector("#Ttotal").append(tot);
+      tot += 5;
+      document.getElementById("Ftotal").textContent = "$ " + tot;
+    }
+
+    function promofunc() {
+      var x = document.getElementById("coupon").value;
+      if (x == "masai30") {
+        document.getElementById("viewpromo").textContent =
+          "Promocode Applied Succesfully";
+
+        var total = cartProducts.reduce(function (accu, currelem) {
+          return accu + Number(currelem.Fprice);
+        }, 0);
+        var q = Math.floor(0.7 * total);
+
+        document.getElementById("Ftotal").textContent = "$ " + q;
+        document.getElementById("Ttl").textContent = "Discounted Price";
+      } else {
+        document.getElementById("viewpromo").textContent = "Invalid Promocode";
+      }
+    }
+    var adr =JSON.parse(localStorage.getItem("address"));
+    document.getElementById("addresss").textContent=adr;
+
+
+    document.getElementById("shipment").addEventListener("click",submitfun)
+function submitfun(){
+ 
+var Cnum =document.getElementById("card").value;
+var mob =document.getElementById("mob").value;
+var Cname =document.getElementById("Cname").value;
+var date =document.getElementById("date").value;
+var sec =document.getElementById("security").value;
+
+if(Cnum==""||Cname=="" ||date==""|| sec==""||mob==""){
+  alert("Please Cheack all the details")
+}
+else if( Cnum!=""&&Cname!="" && date!="" && mob!=""&& sec!="12345"){
+alert("Wrong Security Code....use: 12345")
+}
+else{
+window.location.href="orderPlace.html";
+}
+}
+  </script>
+</html>

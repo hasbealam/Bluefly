@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed</title>
+    <style>
+        img{
+            width: 300px;
+        }
+        body{
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Woo Yeah</h1>
+    <h1>Your Order has Placed Successfully !!</h1>
+    <h2>Thank You for Shopping</h2>
+     <img src="orderplaced.jpg" alt=""><br>
+     <button id="home">Back to Home</button>
+    
+</body>
+<script>
+    document.getElementById("home").addEventListener("click",Tohome);
+    function Tohome(){
+        window.location.href="index.html";
+    }
+</script>
+</html>
