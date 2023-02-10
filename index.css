@@ -14,7 +14,7 @@ link[rel="icon"] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +45,7 @@ link[rel="icon"] {
 
 #upheader div:first-child {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
   justify-content: space-around;
   align-items: center;
   /* width: 100%; */
@@ -96,7 +96,7 @@ link[rel="icon"] {
   padding: 4px;
   /* position: relative; */
   width: 100%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 #welcome {
@@ -133,8 +133,10 @@ ul a {
 
 #navbar {
   width: 95%;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  /* justify-content: center; */
 }
 
 /* slideshow */
