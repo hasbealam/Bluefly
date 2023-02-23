@@ -52,33 +52,6 @@ var products_data = [
     discount: "38%",
     link: "https://www.bluefly.com/collections/women-shoes/products/bf-102309452-s0um",
   },
-
-  {
-    product_name: "GROOVE WOMENS SHIMMER DRESSY ANKLE STRAP",
-    image_link:
-      "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/MCSY1FQjBwvT4Ii0ffl6ya2Q0AphPq6X-25_360x.jpg?v=1675574077",
-    alternative_img_link:
-      "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/SL3zYOiyL4XAJhPER6j1ZK1OHcgGLyBt-25_360x.jpg?v=1675574079",
-    color: "NA",
-    striked_off_price: "975.00",
-    selling_price: "194.99",
-    brand: "NA",
-    discount: "80%",
-    link: "https://www.bluefly.com/collections/women-shoes/products/bf-105940554-mvjg",
-  },
-  {
-    product_name: "WOMENS LEATHER PEEP TOE HEELS",
-    image_link:
-      "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/r62qmEp9BpVHdHZWIX3pYMPCHxNiu1rv-25_35cefa27-54a8-4eec-96fa-7875bf56db4a_360x.jpg?v=1675492617",
-    alternative_img_link:
-      "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/MvAwICr3eOqE8RapLbSFsDpQu3dgRJrG-25_360x.jpg?v=1675492619",
-    color: "NA",
-    striked_off_price: "1,050.00",
-    selling_price: "393.99",
-    brand: "BALENCIAGA",
-    discount: "62%",
-    link: "https://www.bluefly.com/collections/women-shoes/products/bf-105499178-p0bt",
-  },
   {
     product_name: "GOLDEN GOOSE WOMENS",
     image_link:
