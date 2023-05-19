@@ -219,6 +219,85 @@ link[rel="icon"] {
   letter-spacing: 0.2em;
 }
 
+#bottom {
+  margin-top: 20px;
+  width: 100%;
+  /* border: solid red; */
+  background-color: rgb(230, 230, 230);
+  padding: 40px;
+}
+
+#bottom1 {
+  /* border: solid blue; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+#bottom1 button,
+input {
+  width: 50%;
+  height: 30px;
+  /* background-color: black; */
+  color: white;
+}
+
+#bottom2 {
+  /* border: solid blue; */
+  text-align: center;
+  margin-top: 60px;
+}
+
+#bottom1 > div:nth-child(1) {
+  display: flex;
+  width: 90%;
+  color:black;
+}
+
+#bottom1  h3{
+  font-size: 15px;
+  line-height: 25px;
+  font-family: Futura, sans-serif;
+  /* color: blue; */
+}
+#bottom1  h4{
+  font-size: 13px;
+  line-height: 25px;
+  font-family: Futura, sans-serif;
+  /* color: blue; */
+}
+
+#bottom1 > div {
+  /* border: solid green; */
+  justify-content: space-between;
+}
+
+#bottom1 button {
+  background-color: black;
+  color: white;
+  width: 51%;
+}
+
+#bottom2 > h4{
+  font-family: Futura, sans-serif;
+  font-size: 13px;
+}
+
+#bottom2 > img {
+  width: 200px;
+  height: 80px;
+}
+#bottom {
+  font-family: Futura, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: black;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.6;
+}
+
 /* page responsive part */
 
 @media all and (min-width:480px) and (max-width:760px) {
@@ -264,52 +343,6 @@ link[rel="icon"] {
   
 }
 
-#bottom {
-  width: 100%;
-  /* border: solid red; */
-  background-color: rgb(230, 230, 230);
-  padding: 40px;
-}
-
-#bottom1 {
-  /* border: solid blue; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-
-}
-
-#bottom1 button,
-input {
-  width: 50%;
-  height: 30px;
-  /* background-color: black; */
-  color: white;
-}
-
-#bottom2 {
-  /* border: solid blue; */
-  text-align: center;
-  margin-top: 60px;
-
-}
-
-#bottom1>div:nth-child(1) {
-  display: flex;
-  width: 90%;
-}
-
-#bottom1>div {
-  /* border: solid green; */
-  justify-content: space-between;
-}
-
-#bottom1 button {
-  background-color: black;
-  color: white;
-  width: 51%;
-
-}
 
 @media all and (min-width:120px) and (max-width:480px) {
   #offers_div {
