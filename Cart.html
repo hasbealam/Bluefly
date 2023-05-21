@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluFly Cart</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+    }
+
+    link[rel="icon"] {
+        width: 150px;
+        height: 150px;
+    }
+
+    #announcement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+    }
+
+    #welcome {
+        font-weight: 700;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-size: .85em;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* uppergeader */
+    #upheader>div {
+        width: 95%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    #upheader div:first-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    #divheaderlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #headerlogo {
+        width: 200px;
+    }
+
+    #headericonsdiv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #headericonsdiv img {
+        width: 23px;
+        margin-left: 27px;
+    }
+
+    #headericonsdiv span {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #headericonsdiv span:hover {
+        cursor: pointer;
+    }
+
+    /* navbar header */
+    #navbar ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+        /* font-family: Tiemann,serif; */
+        /* font-family: Futura,sans-serif; */
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 14px;
+        /* border: 1px solid black; */
+    }
+
+    ul a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #navbar {
+        width: 95%;
+        display: flex;
+        justify-content:center;       }
+
+
+        h1{
+            text-align: center;
+            margin-bottom: -10px;
+        }
+        #quantity{
+            
+            display: flex;
+            justify-content:right
+             ;
+            /* border: solid black; */
+            margin-right: 15px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        #quantity>div{
+            display: flex;
+           /* border: solid black; */
+        }
+        p{
+            margin: 25px;
+
+        }
+        img {
+            width: 105px;
+            margin-top: 10px;
+            padding: 0px 10px;
+        }
+       
+        #CartProducts >div {
+             display: flex;
+             justify-content: space-between;
+           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+             margin-right: 16px;
+             padding: 0px 15px;
+        }
+        #CartProducts>div>div{
+           
+            display: flex;
+        }
+        #rem{
+            background-color: white;
+            color: black;
+            border-color: rgb(233, 241, 241);
+        }
+        h4{
+            margin: 15px;
+        }
+       
+        #amount{
+            display: flex;
+            justify-content: end;
+        }
+         #taxmsg{
+            text-align: right;
+            margin: -35px 5px 0px 5px;
+         }
+         #checkout{
+            display: flex;
+            justify-content: right;
+         }
+         button{
+            margin: 15px;
+           font-size: 15px;
+           padding: 8px;
+          
+         }
+         #update{
+            background-color:white;
+            color: black;
+            border-color: aliceblue;
+         }
+         #check{
+            background-color: black;
+            color: white;
+          
+         }
+         h3{
+            margin: 15px 30px;
+         }
+         #contshop{
+            font-size: 15px;
+            font-family: futura;
+            background-color: white;
+            color: black;
+            border-color: darkgrey;
+            
+         }
+         .Pdetails{
+            display: flex;
+         }
+         .Pdetails>div>p{
+            line-height: 0px;
+         }
+         #rem{
+            margin-top: 0px;
+            background-color: azure;
+            columns: black;
+            padding: 10px;
+         }
+         #aa:link, #aa:visited {
+  background-color: #010000;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  height: 20px;
+}
+
+#aa:hover, #aa:active {
+  background-color: rgb(117, 107, 107);
+}
+#aa{
+    margin-right: 10px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="upheader">
+            <div>
+                <div></div>
+                <div id="divheaderlogo">
+                    <a href="index.html">
+                        <img id="headerlogo"
+                            src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1613183141"
+                            alt="logo">
+                    </a>
+                </div>
+                <div id="headericonsdiv">
+                    <span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMldb7foKl4UOqRm4MHKueO0z7MWCYzndRNQ&usqp=CAU"
+                            alt="search">
+                        SEARCH
+                    </span>
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo6vvPHexMaMZgz8_SiRqzWOY8SB0D3q6a7A&usqp=CAU"
+                            alt="profile">
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/ios/1x/loading-heart.png" alt="favourite">
+                    </a>
+                    <a href="">
+                        <img src="https://img.icons8.com/ios/1x/shopping-bag.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li>
+                        <a href="">CLOTHING</a>
+                    </li>
+                    <li>
+                        <a href="">SHOES</a>
+                    </li>
+                    <li>
+                        <a href="">HANDBAG & ACCESSORIES</a>
+                    </li>
+                    <li>
+                        <a href="">DESIGNERS</a>
+                    </li>
+                    <li>
+                        <a href="">SUNGLASESS</a>
+                    </li>
+                    <li>
+                        <a href="">JEWELRY & WATCHES</a>
+                    </li>
+                    <li>
+                        <a href="">UNDER $50</a>
+                    </li>
+                    <li>
+                        <a href="">CLEARANCE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- announcements -->
+        <div id="announcement">
+            <span id="welcome">WELCOME TO BLUEFLY:</span>
+            <span id="subwelcom">Luxuary brands at discounted prices</span>
+        </div>
+    </div>
+    <h1>CART <br><button id="contshop">Cotinue shopping</button></h1>
+    
+    <div id="quantity">
+     <div>
+        <p>Price</p>  
+      <p>Qty.</p>  
+      <p> Total</p> 
+</div>
+    </div>
+     <div id="CartProducts">
+     
+
+        <div>
+            <div class="Pdetails">
+                <div>
+                <img src="https://rukminim1.flixcart.com/image/400/400/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+            </div>
+            <div>
+           <p>Products details colour specification</p>
+           <p>warranty electroicity consumption</p>
+           <p>xyz</p>
+           <button id="rem">Remove</button>
+            </div>
+            </div>
+                <div>
+                  <p>$130</p>
+                  <p>1</p>
+                  <p>$130</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="Pdetails">
+                    <div>
+                    <img src="https://rukminim1.flixcart.com/image/400/400/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+                </div>
+                <div>
+               <p>Products details colour specification</p>
+               <p>warranty electroicity consumption</p>
+               <p>xyz</p>
+               <button id="rem">Remove</button>
+                </div>
+                </div>
+                    <div>
+                      <p>$130</p>
+                      <p>1</p>
+                      <p>$130</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="Pdetails">
+                        <div>
+                        <img src="https://rukminim1.flixcart.com/image/400/400/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+                    </div>
+                    <div>
+                   <p>Products details colour specification</p>
+                   <p>warranty electroicity consumption</p>
+                   <p>xyz</p>
+                   <button id="rem">Remove</button>
+                    </div>
+                    </div>
+                        <div>
+                          <p>$130</p>
+                          <p>1</p>
+                          <p>$130</p>
+                        </div>
+                    </div>
+         <div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/image/400/400/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+            <h4> Products details colour specification <br> warranty electroicity consumption <br><br><button id="rem">Remove</button></h4> 
+            
+        </div>
+            <div>
+              <p>$130</p>
+              <p>1</p>
+              <p>$130</p>
+            </div>
+        </div>
+         <div>
+        <div>
+            <img src="https://rukminim1.flixcart.com/image/400/400/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+            <h4> Products details colour <p></p> specification <br> warranty electroicity consumption <br><br><button id="rem">Remove</button></h4> 
+            
+        </div>
+            <div>
+              <p>$130</p>
+              <p>1</p>
+              <p>$130</p>
+            </div>
+        </div>
+        </div>
+        <br>
+
+       <div>
+       <div id="amount">
+       <h3>Subtotal</h3>  <h3><span id="Ttotal">0</span></h3>
+       </div>
+       <div id="taxmsg">
+        <p>Shipping, taxes, discount codes calculated at Checkout</p>
+    </div>
+    <div id="checkout">
+        
+        <a href="index.html" id="aa">UPDATE CART</a> <a href="Address.html" id="aa"> CHECK OUT</a>
+    </div>
+       </div>
+       
+
+
+   
+</body>
+<script>
+  
+    var cartProducts=JSON.parse(localStorage.getItem("checkCart"))||[];
+    DispplayCartprod(); 
+    TotalPrice();   
+    function DispplayCartprod(){
+        document.getElementById("CartProducts").textContent="";
+        cartProducts=JSON.parse(localStorage.getItem("checkCart"))||[];
+            cartProducts.map(function(elem,index){
+
+           
+            var div =document.createElement("div");
+            var div1 =document.createElement("div");
+            
+            var div2 =document.createElement("div");
+            
+            var div3 =document.createElement("div");
+            div3.setAttribute("class","Pdetails")
+            var div4 =document.createElement("div");
+            
+            var image = document.createElement("img");
+        image.setAttribute("src", elem.image_url);
+        image.style.width="105px";
+        var p1 = document.createElement("p");
+        p1.textContent=elem.Name;
+        var p2 = document.createElement("p");
+        p2.textContent=elem.Details;
+        var p3 = document.createElement("p");
+        p3.textContent=elem.EDetails;
+        var removecart =document.createElement("button");
+        removecart.textContent="Remove";
+        removecart.setAttribute("class","rem");
+        removecart.addEventListener("click",function(){RemoveFunc(index)});
+        var p4 = document.createElement("p");
+        p4.textContent="$ "+elem.price;
+        var p5 = document.createElement("p");
+        p5.textContent=elem.Quantity;
+        var p6= document.createElement("p");
+        p6.textContent="$ "+elem.Fprice;
+        div1.append(image);
+        div2.append(p1,p2,p3,removecart);
+        div3.append(div1,div2);
+         div4.append(p4,p5,p6);
+         div.append(div3,div4);
+         document.getElementById("CartProducts").append(div);
+
+
+    });
+    }
+
+    function RemoveFunc(index){
+    cartProducts.splice(index,1);
+    localStorage.setItem("checkCart",JSON.stringify(cartProducts));
+   
+    
+    DispplayCartprod();
+    TotalPrice();
+   
+}
+
+function TotalPrice(){
+    document.querySelector("#Ttotal").textContent="$ ";
+    var total = cartProducts.reduce(function(accu,currelem){
+       return  accu + Number(currelem.Fprice);
+    },0);
+
+    
+    
+  
+    document.querySelector("#Ttotal").append(total);
+    // document.getElementById("promobtn").addEventListener("click",function(){applypromo(total)});
+}
+
+document.getElementById("contshop").addEventListener("click",tohome)
+function tohome(){
+    window.location.href="index.html";
+}
+</script>
+</html>
